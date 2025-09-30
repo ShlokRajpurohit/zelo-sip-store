@@ -3,24 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import { Check, Gift, Calendar, Percent, Crown, Zap } from "lucide-react";
-
 const ZeloClub = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-accent-light/20 via-background to-primary/5 py-20">
+      <section className="bg-gradient-to-br from-accent-light/20 via-background to-primary/5 px-0 py-[34px]">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="heading-xl text-primary mb-6">Your Health Investment Plan</h1>
-          <p className="heading-sm text-accent mb-8">Join Zelo SIP & Get 10% Off!</p>
-          <p className="text-premium max-w-3xl mx-auto mb-8">
-            Transform your health journey with our exclusive membership programs. 
-            Save more, stay healthier, and enjoy premium benefits designed for your wellness.
-          </p>
+          <h1 className="heading-xl text-primary mb-6 text-5xl">Invest in Your Health, the Zelo Way</h1>
+          <p className="heading-sm text-accent mb-8">Start Zelo SIP &amp; Get 10% Off!</p>
+          <p className="text-premium max-w-3xl mx-auto mb-8">Turn small steps into big health wins with our exclusive reward programs. Save more, feel better, and stay on track with your wellness journey.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8">Join Zelo Club</Button>
-            <Button size="lg" variant="outline" className="px-8">Start Zelo SIP</Button>
+            
+            
           </div>
         </div>
       </section>
@@ -29,8 +24,8 @@ const ZeloClub = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="heading-lg text-primary mb-4">Choose Your Plan</h2>
-            <p className="text-premium">Select the perfect plan for your health journey</p>
+            <h2 className="heading-lg text-primary mb-4">Zelo Rewards</h2>
+            <p className="text-premium">Your discounts appear automatically at checkout. No action needed.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -48,39 +43,18 @@ const ZeloClub = () => {
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Crown className="w-8 h-8 text-accent" />
                 </div>
-                <CardTitle className="text-2xl text-primary">Zelo Club</CardTitle>
-                <p className="text-muted-foreground">Premium Membership Program</p>
+                <CardTitle className="text-primary text-5xl">Zelo Club</CardTitle>
+                <p className="text-muted-foreground text-2xl">Loyalty Rewards for Repeat Buyers</p>
               </CardHeader>
               
               <CardContent className="space-y-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">FREE</div>
-                  <p className="text-sm text-muted-foreground">First year complimentary</p>
-                  <p className="text-sm text-accent font-medium mt-1">Then ₹99/year</p>
+                  
+                  <p className="text-muted-foreground text-2xl">Stay active with at least one purchase a year and enjoy a 5% discount as a Zelo Club member — your commitment matters!</p>
+                  
                 </div>
 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-fresh-green" />
-                    <span>5% discount on all orders</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-fresh-green" />
-                    <span>Discount valid for 1 year from last purchase</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-fresh-green" />
-                    <span>Early access to new products</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-fresh-green" />
-                    <span>Exclusive health tips & recipes</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-fresh-green" />
-                    <span>Priority customer support</span>
-                  </div>
-                </div>
+                
 
                 <Button className="w-full" size="lg">
                   Join Zelo Club
@@ -182,35 +156,27 @@ const ZeloClub = () => {
             <h2 className="heading-md text-primary mb-12 text-center">Frequently Asked Questions</h2>
             
             <div className="space-y-6">
-              {[
-                {
-                  question: "What's the difference between Zelo Club and Zelo SIP?",
-                  answer: "Zelo Club is our membership program offering 5% discount and exclusive benefits. Zelo SIP is our subscription service with monthly deliveries and an additional 5% discount. You can have both for maximum 10% savings!"
-                },
-                {
-                  question: "How does the Zelo Club discount work?",
-                  answer: "Once you join Zelo Club, you get 5% off on all orders. The discount stays active for 1 year from your last purchase, so regular customers always enjoy the benefits."
-                },
-                {
-                  question: "Can I customize my Zelo SIP box?",
-                  answer: "Absolutely! You can choose your preferred products, quantities, and delivery frequency. Modify your box anytime through your account dashboard."
-                },
-                {
-                  question: "Can I pause my Zelo SIP subscription?",
-                  answer: "Yes, you can pause, modify, or cancel your Zelo SIP subscription anytime without any penalty. We want maximum flexibility for your lifestyle."
-                },
-                {
-                  question: "How much can I save with both plans?",
-                  answer: "With both Zelo Club (5%) and Zelo SIP (5%), you save a total of 10% on every order plus enjoy all the membership benefits and monthly convenience."
-                }
-              ].map((faq, index) => (
-                <Card key={index}>
+              {[{
+              question: "What's the difference between Zelo Club and Zelo SIP?",
+              answer: "Zelo Club is our membership program offering 5% discount and exclusive benefits. Zelo SIP is our subscription service with monthly deliveries and an additional 5% discount. You can have both for maximum 10% savings!"
+            }, {
+              question: "How does the Zelo Club discount work?",
+              answer: "Once you join Zelo Club, you get 5% off on all orders. The discount stays active for 1 year from your last purchase, so regular customers always enjoy the benefits."
+            }, {
+              question: "Can I customize my Zelo SIP box?",
+              answer: "Absolutely! You can choose your preferred products, quantities, and delivery frequency. Modify your box anytime through your account dashboard."
+            }, {
+              question: "Can I pause my Zelo SIP subscription?",
+              answer: "Yes, you can pause, modify, or cancel your Zelo SIP subscription anytime without any penalty. We want maximum flexibility for your lifestyle."
+            }, {
+              question: "How much can I save with both plans?",
+              answer: "With both Zelo Club (5%) and Zelo SIP (5%), you save a total of 10% on every order plus enjoy all the membership benefits and monthly convenience."
+            }].map((faq, index) => <Card key={index}>
                   <CardContent className="p-6">
                     <h3 className="font-semibold text-primary mb-3">{faq.question}</h3>
                     <p className="text-muted-foreground">{faq.answer}</p>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -233,8 +199,6 @@ const ZeloClub = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ZeloClub;
