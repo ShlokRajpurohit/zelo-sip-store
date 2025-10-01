@@ -4,9 +4,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import ProductCategory from "./pages/ProductCategory";
+import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
-import ZeloClub from "./pages/ZeloClub";
+import ZeloRewards from "./pages/ZeloRewards";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Account from "./pages/Account";
@@ -24,15 +24,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/products/:category" element={<ProductCategory />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="/zelo-club" element={<ZeloClub />} />
+          <Route path="/zelo-rewards" element={<ZeloRewards />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/account" element={<Account />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
