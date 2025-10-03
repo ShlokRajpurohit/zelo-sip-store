@@ -42,6 +42,89 @@ const Index = () => {
         </div>
       </section>
 
+      {/* The Enerzelo Promise - Core Pillars */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="heading-lg text-primary mb-4">The Enerzelo Promise</h2>
+            <p className="text-premium max-w-2xl mx-auto">
+              Every ingredient, every process, every promise – crafted with one mission: to make India healthier, one natural bite at a time.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Zero. Zero. Zero. */}
+            <Card className="group cursor-pointer hover:shadow-premium transition-all duration-300 border-border/50 bg-gradient-to-br from-fresh-green/5 to-fresh-green/10">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-fresh-green/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <ShoppingCart className="w-8 h-8 text-fresh-green" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-3">Zero. Zero. Zero.</h3>
+                <p className="text-lg font-semibold text-accent mb-3">100% Natural</p>
+                <p className="text-muted-foreground">
+                  Zero added sugar, zero preservatives, zero chemicals. Only nature's finest ingredients.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* The Enerzelo Effect */}
+            <Card className="group cursor-pointer hover:shadow-premium transition-all duration-300 border-border/50 bg-gradient-to-br from-amber/5 to-amber/10">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-amber/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <ShoppingCart className="w-8 h-8 text-amber" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-3">The Enerzelo Effect</h3>
+                <p className="text-lg font-semibold text-accent mb-3">Extra Glow, Bigger Smiles</p>
+                <p className="text-muted-foreground">
+                  Endless happiness starts from within. Natural nutrition for natural radiance.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Protein Power */}
+            <Card className="group cursor-pointer hover:shadow-premium transition-all duration-300 border-border/50 bg-gradient-to-br from-primary/5 to-primary/10">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <ShoppingCart className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-3">Protein Power</h3>
+                <p className="text-lg font-semibold text-accent mb-3">Filling the Gap</p>
+                <p className="text-muted-foreground">
+                  90% of India is protein deficient. We're here to change that, one bar at a time.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Zelolicious Taste */}
+            <Card className="group cursor-pointer hover:shadow-premium transition-all duration-300 border-border/50 bg-gradient-to-br from-cranberry/5 to-cranberry/10">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-cranberry/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <ShoppingCart className="w-8 h-8 text-cranberry" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-3">Zelolicious Taste</h3>
+                <p className="text-lg font-semibold text-accent mb-3">Guilt-Free Indulgence</p>
+                <p className="text-muted-foreground">
+                  Taste your kids will love. Indulgence adults deserve. Health everyone needs.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience Banner */}
+      <section className="py-20 bg-gradient-to-br from-accent-light/5 to-primary/5">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="heading-lg text-primary mb-4">
+            Taste Your Kids Will Love.<br />
+            <span className="text-accent">Indulgence Adults Deserve.</span>
+          </h2>
+          <p className="text-premium max-w-3xl mx-auto">
+            From gym enthusiasts to busy professionals, from growing kids to health-conscious adults – there's a perfect Enerzelo for everyone.
+          </p>
+        </div>
+      </section>
+
       {/* Product Preview */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
